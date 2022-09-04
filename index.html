@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego del Ahorcado</title>
+    <link rel="ico" href="favicon.ico">
+    <link rel="stylesheet" href="styles/normalice.css">
+    <link rel="stylesheet" href="styles/styles.css" >
+</head>
+<body>
+
+    <header>
+        <a href="index.html">
+            <img class="logo" src="img/Logo.png" alt="Logo Alura">
+        </a>
+    </header>
+
+    <main class="main-section" id="main-section">
+
+        <section class="botones-inicio">
+            <button id="btn-iniciar">Iniciar Juego</button>
+            <button class="btn-blanco" id="btn-nueva-palabra">Agregar Nueva Palabra</button>
+        </section>
+
+        <section class="nueva-palabra">
+            <textarea id="campo-palabra" cols="30" rows="10" placeholder="Ingrese una palabra"></textarea>
+            <div class="info">
+                <img src="img/Vector.svg" alt="Info">
+                <p>Mínimo de 5 letras. Solo mayúsculas</p>
+            </div>
+            <div class="botones-nueva-palabra">
+                <button class="btn-azul" id="btn-guardar">Guardar y empezar</button>
+                <button class="btn-blanco" id="btn-cancelar">Cancelar</button>
+            </div>
+        </section>
+
+        <section id="juego" class="juego">
+            <div id="div-canvas">
+                <canvas id="canvas"></canvas>
+                <div id="letras-usadas">
+                    <P>LETRAS USADAS:</P>
+                </div>
+            </div>
+            <div id="contenedor-palabra"></div>
+            <div class="botones-ingresar-letras">
+                <button class="btn-azul" id="btn-reiniciar">Nuevo Juego</button>
+                <button class="btn-blanco" id="btn-salir">Salir</button>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Challenge Alura 2022 &copy; Desarrollado por Lucas Capdevila</p>
+    </footer>
+
+    <script type="text/javascript" src="js/palabras.js"></script>
+    <script type="text/javascript" src="js/transiciones.js"></script>
+    <script type="text/javascript" src="js/nueva-palabra.js"></script>
+    <script type="text/javascript" src="js/ahorcado.js"></script>
+</body>
+</html>
